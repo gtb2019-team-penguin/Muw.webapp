@@ -1,0 +1,18 @@
+{
+  "name": "muw.webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "npx node-sass ./src/layouts/main.scss ./public/layouts/bundle.css",
+    "sass:w": "npx node-sass -w ./src/layouts/main.scss ./public/layouts/main.css"
+  },
+  "author": "azumi-media",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  }
+}
