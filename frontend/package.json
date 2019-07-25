@@ -11,6 +11,7 @@
   "author": "azumi-media",
   "license": "ISC",
   "devDependencies": {
+    "@angular/cli": "^8.1.2",
     "node-sass": "^4.12.0",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5"
