@@ -1,0 +1,50 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+ul {
+  margin: 0;
+  padding: 0; }
+
+body,
+html {
+  font-size: 10px; }
+
+.wrapper {
+  background-color: #red;
+  width: 100%;
+  height: auto; }
+  .wrapper .title-a {
+    background-color: #FFC3D5;
+    width: auto;
+    height: 80px;
+    line-height: 2.5em;
+    margin: 0;
+    padding-left: 50px;
+    border-top-left-radius: 47px;
+    border-top-right-radius: 47px;
+    font-size: 2.5em;
+    color: #FFF; }
+  .wrapper .image-a {
+    background-color: red;
+    width: 90%;
+    max-width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px; }
+  .wrapper .text-a {
+    background-color: #FFF;
+    width: auto;
+    height: 100%;
+    margin: 40px;
+    line-height: 3em; }
+  .wrapper .text_bold {
+    font-weight: bold; }
+  .wrapper footer {
+    background-color: aqua;
+    height: 30px;
+    width: auto;
+    position: relative;
+    bottom: 0; }
