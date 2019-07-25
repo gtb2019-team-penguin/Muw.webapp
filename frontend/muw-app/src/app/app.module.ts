@@ -19,7 +19,8 @@ import { TimelineComponent } from './timeline/timeline.component';
       { path: "test", component: TopComponent },
       { path: "test/howler", component: HowlerComponent },
       { path: "test/fader", component: SoundFaderComponent },
-      { path: "test/crossfade", component: SoundCrossfaderComponent }
+      { path: "test/crossfade", component: SoundCrossfaderComponent },
+      { path: "tl", component: TimelineComponent }
     ])
   ],
   declarations: [
