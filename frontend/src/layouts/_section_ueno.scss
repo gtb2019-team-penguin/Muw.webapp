@@ -10,12 +10,11 @@
 	border: double #ff99ac;
 
 	.title-a{
-			 border-bottom: 1px solid #f0bdc4; /* 下線 */
-			 color: #ff99ac; /* 文字色 */
-			 padding: 10px 10px 10px 70px; /* 上・右・下・左の余白 */
-			 position: relative;
-			}
-	.title-a:before{
+		 border-bottom: 1px solid #f0bdc4; /* 下線 */
+		 color: #ff99ac; /* 文字色 */
+		 padding: 10px 10px 10px 70px; /* 上・右・下・左の余白 */
+		 position: relative;
+		 &:before{
 			 background-color: #ff6a88; /* 円1の色 */
 			 border-radius: 50%;
 			 content: '';
@@ -26,9 +25,9 @@
 			 width: 25px; /* 円1の幅 */
 			 height: 25px; /* 円1の高さ */
 			 box-shadow: 25px 10px 0px #ff6a88, /* 円2の位置・色 */
-			    3px 25px 0px #ff6a88; /* 円3の位置・色 */
-			}
-	.title-a:after{
+			 3px 25px 0px #ff6a88; /* 円3の位置・色 */
+		}
+		&:after{
 			 border: 4px solid #fff; /* 白抜き円 */
 			 border-radius: 50%;
 			 content: '';
@@ -38,7 +37,9 @@
 			 left: 21px;
 			 width: 15px; /* 白抜き円の幅 */
 			 height: 15px; /* 白抜き円の高さ */
-			}
+		}
+}
+	
 
 	
 
