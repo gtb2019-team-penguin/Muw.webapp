@@ -4,7 +4,7 @@ import { Howl, Howler } from "howler";
 @Component({
   selector: "app-howler",
   templateUrl: "./howler.component.html",
-  styleUrls: ["../app.component.css", "./howler.component.css"]
+  styleUrls: ["./howler.component.css"]
 })
 export class HowlerComponent {
   title: string = "Howler";

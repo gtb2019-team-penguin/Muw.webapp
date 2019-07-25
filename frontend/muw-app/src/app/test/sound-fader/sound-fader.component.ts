@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-sound-fader",
   templateUrl: "./sound-fader.component.html",
-  styleUrls: ["../app.component.css", "./sound-fader.component.css"]
+  styleUrls: ["./sound-fader.component.css"]
 })
 export class SoundFaderComponent {
   title: string = "sound";
