@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 # 音源
-src/assets/audio/
+/src/assets/audio/
