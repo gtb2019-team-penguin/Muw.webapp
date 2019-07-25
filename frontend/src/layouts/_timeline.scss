@@ -4,48 +4,99 @@
 	background-color:#red;
 	width: 100%;
 	height: auto;
-
-	.title-a{
-		background-color:#FFC3D5;
-		width: auto;
-		height: 80px;
-		line-height: 2.5em;
-		margin: 0;
-		padding-left: 50px;
-		border-top-left-radius: 47px;
-		border-top-right-radius: 47px;
-		font-size: 2.5em;
-		color:#FFF;
-	}	
 	
-	.image-a{
-		background-color: red;
-		width: 90%;
-		max-width: 900px;
-		height: 500px;
+	.nav{
+		background-color: #1C1924;
+		width: 100%;
+		height: 50px;
+		display: flex;
+		flex-flow: row nowrap;
+		position: fixed;
+		top: 0px;
+		
+		h1{
+			.logo{
+				width: 100px;
+				height: auto;
+				position: relative;
+				top: 30%;
+				left: 10px;
+			}
+		
+		}
+
+		.navlist{
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content:flex-end; /*効かない助けて*/
+			list-style-type: none;
+			
+			.nav_btn{
+				background-color: aliceblue;
+				width: 40px;
+				height: auto;
+				margin: 10px;
+				
+				:after{
+					color: #FB2E76;	
+				}
+			}
+		}
+		
+		}
+	
+	.boxes{
+		background-color:cadetblue;
+		width: 80%;
+		height: auto;
 		margin: 0 auto;
-		margin-top: 40px;
-	}
-	
-	.text-a{
-		background-color: #FFF;
-		width: auto;
-		height: 100%;
-		margin: 40px;
-		line-height: 3em;
-	}
+		padding: 60px;
+		
+		.box001{
+			background-color: indianred;
+			width: 100%;
+			height: 400;
 
-	.text_bold{
-		font-weight: bold;
+			.user001{
+				background-color:#FFC3D5;
+				width: auto;
+				height: 30px;
+				line-height: 2.5em;
+				margin: 0 auto;
+				font-size: 1.5em;
+				color:#FFF;
+			}	
+
+			.img{
+				width: 100%;
+				height: auto;
+				margin: 0 auto;
+			
+				.box001_img{
+					width: 100%;
+					height: 40%;
+					margin: 0 auto;
+				}
+			}
+
+			.inbox_txt{
+				font-size: 1.4em;	
+				position: relative;
+				z-index: 5;
+			}
+		}
 	}
 	
 	footer{
-		background-color: aqua;
-		height: 30px;
-		width: auto;
+		background-color: #1C1924;
+		width: 100%;
+		height: 25px;
 		position: relative;
 		bottom: 0;
+		font-size: 1em;
+		color: #FFF;
+		line-height: 2.5em;
+		text-align: center;
 	}
-
+		
 }
-

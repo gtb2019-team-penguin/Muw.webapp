@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body,
 div,
 h1,
@@ -16,35 +17,70 @@ html {
   background-color: #red;
   width: 100%;
   height: auto; }
-  .wrapper .title-a {
-    background-color: #FFC3D5;
-    width: auto;
-    height: 80px;
-    line-height: 2.5em;
-    margin: 0;
-    padding-left: 50px;
-    border-top-left-radius: 47px;
-    border-top-right-radius: 47px;
-    font-size: 2.5em;
-    color: #FFF; }
-  .wrapper .image-a {
-    background-color: red;
-    width: 90%;
-    max-width: 900px;
-    height: 500px;
+  .wrapper .nav {
+    background-color: #1C1924;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    top: 0px; }
+    .wrapper .nav h1 .logo {
+      width: 100px;
+      height: auto;
+      position: relative;
+      top: 30%;
+      left: 10px; }
+    .wrapper .nav .navlist {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      /*効かない助けて*/
+      list-style-type: none; }
+      .wrapper .nav .navlist .nav_btn {
+        background-color: aliceblue;
+        width: 40px;
+        height: auto;
+        margin: 10px; }
+        .wrapper .nav .navlist .nav_btn :after {
+          color: #FB2E76; }
+  .wrapper .boxes {
+    background-color: cadetblue;
+    width: 80%;
+    height: auto;
     margin: 0 auto;
-    margin-top: 40px; }
-  .wrapper .text-a {
-    background-color: #FFF;
-    width: auto;
-    height: 100%;
-    margin: 40px;
-    line-height: 3em; }
-  .wrapper .text_bold {
-    font-weight: bold; }
+    padding: 60px; }
+    .wrapper .boxes .box001 {
+      background-color: indianred;
+      width: 100%;
+      height: 400; }
+      .wrapper .boxes .box001 .user001 {
+        background-color: #FFC3D5;
+        width: auto;
+        height: 30px;
+        line-height: 2.5em;
+        margin: 0 auto;
+        font-size: 1.5em;
+        color: #FFF; }
+      .wrapper .boxes .box001 .img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto; }
+        .wrapper .boxes .box001 .img .box001_img {
+          width: 100%;
+          height: 40%;
+          margin: 0 auto; }
+      .wrapper .boxes .box001 .inbox_txt {
+        font-size: 1.4em;
+        position: relative;
+        z-index: 5; }
   .wrapper footer {
-    background-color: aqua;
-    height: 30px;
-    width: auto;
+    background-color: #1C1924;
+    width: 100%;
+    height: 25px;
     position: relative;
-    bottom: 0; }
+    bottom: 0;
+    font-size: 1em;
+    color: #FFF;
+    line-height: 2.5em;
+    text-align: center; }
