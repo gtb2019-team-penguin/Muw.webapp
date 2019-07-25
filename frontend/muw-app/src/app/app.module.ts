@@ -10,6 +10,10 @@ import { SoundFaderComponent } from "@test/sound-fader/sound-fader.component";
 import { SoundCrossfaderComponent } from "@test/sound-crossfader/sound-crossfader.component";
 import { SectionElementComponent } from "@test/section-element/section-element.component";
 import { TimelineComponent } from './timeline/timeline.component';
+import { HpCoreComponent } from './hp/hp-core/hp-core.component';
+import { HpHeaderComponent } from './hp/hp-header/hp-header.component';
+import { HpFooterComponent } from './hp/hp-footer/hp-footer.component';
+import { HpSectionComponent } from './hp/hp-section/hp-section.component';
 
 @NgModule({
   imports: [
@@ -20,7 +24,8 @@ import { TimelineComponent } from './timeline/timeline.component';
       { path: "test/howler", component: HowlerComponent },
       { path: "test/fader", component: SoundFaderComponent },
       { path: "test/crossfade", component: SoundCrossfaderComponent },
-      { path: "tl", component: TimelineComponent }
+      { path: "tl", component: TimelineComponent },
+      { path: "hp", component: HpCoreComponent }
     ])
   ],
   declarations: [
@@ -30,7 +35,11 @@ import { TimelineComponent } from './timeline/timeline.component';
     SoundFaderComponent,
     SoundCrossfaderComponent,
     SectionElementComponent,
-    TimelineComponent
+    TimelineComponent,
+    HpCoreComponent,
+    HpHeaderComponent,
+    HpFooterComponent,
+    HpSectionComponent
   ],
   bootstrap: [AppComponent],
   providers: []

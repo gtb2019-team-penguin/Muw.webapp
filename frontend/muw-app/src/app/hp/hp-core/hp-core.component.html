@@ -1,0 +1,7 @@
+<app-hp-header (headerHeight)="headerHeight($event)"></app-hp-header>
+
+<div id="container" [style.padding-top]="paddingTop">
+  <app-hp-section *ngFor="let list of lists;" [list]="list" [thre]="thre"></app-hp-section>
+</div>
+
+<app-hp-footer></app-hp-footer>

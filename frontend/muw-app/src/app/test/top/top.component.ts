@@ -8,8 +8,8 @@ import { Component } from "@angular/core";
 export class TopComponent {
   title = "Test Top";
   lists = [
-    { title: "howler", url: "@test/howler" },
-    { title: "fader", url: "@test/fader" },
-    { title: "crossfader", url: "@test/crossfade" }
+    { title: "howler", url: "/test/howler" },
+    { title: "fader", url: "/test/fader" },
+    { title: "crossfader", url: "/test/crossfade" }
   ];
 }

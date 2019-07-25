@@ -1,0 +1,48 @@
+$mainColor: #fff;
+$bgColor: #1e1311;
+
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+
+  header {
+    background: $bgColor;
+    display: flex;
+    align-items: center;
+    line-height: 1.0;
+
+    .home {
+      &__logo {
+        height: 60px;
+      }
+    }
+
+    nav {
+
+      ul {
+        display: flex;
+        padding-left: 40px;
+
+        li {
+
+          +li {
+            margin-left: 1rem;
+          }
+
+          a {
+            color: $mainColor;
+            text-decoration: none;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
