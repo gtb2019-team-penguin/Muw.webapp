@@ -1,0 +1,10 @@
+<div *ngFor="let list of lists; index as i">
+  <p>{{ list.pos}}</p>
+  <app-section-element
+    [list]="list"
+    [num]="i"
+    (event)="onReceiveEventFromChild($event)"
+  ></app-section-element>
+</div>
+
+<div class="threshold"></div>

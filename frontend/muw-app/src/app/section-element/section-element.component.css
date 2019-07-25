@@ -1,0 +1,22 @@
+.section-wrap {
+  width: 100%;
+}
+section {
+  border: 1px solid rgb(8, 107, 146);
+  border-radius: 5px;
+  width: 100%;
+  padding: 30px 20px;
+  color: #333;
+  text-align: left;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+section h2 {
+  font-size: 16px;
+}
+section p {
+  font-size: 14px;
+}
+section h2 + p {
+  margin-top: 20px;
+}
