@@ -1,0 +1,11 @@
+div + div {
+  margin-bottom: 20px;
+}
+
+.threshold {
+  border-top: 1px dashed rgb(165, 14, 14);
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+}

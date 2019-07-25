@@ -1,0 +1,8 @@
+<h1>{{ title }}</h1>
+<ul>
+  <li *ngFor="let list of lists;">
+    <a [href]="list.url">
+      {{ list.title }}
+    </a>
+  </li>
+</ul>

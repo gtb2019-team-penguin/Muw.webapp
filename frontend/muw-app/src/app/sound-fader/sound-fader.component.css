@@ -1,0 +1,13 @@
+.content {
+  width: 80%;
+  height: 10000px;
+  margin: 0 auto;
+  border: 1px solid rgb(21, 197, 182);
+  border-radius: 5px;
+}
+
+.controller {
+  position: fixed;
+  top: 50px;
+  left: 10%;
+}
