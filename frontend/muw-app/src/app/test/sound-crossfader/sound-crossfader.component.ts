@@ -10,7 +10,7 @@ import { DOCUMENT } from "@angular/common";
 @Component({
   selector: "app-sound-crossfader",
   templateUrl: "./sound-crossfader.component.html",
-  styleUrls: ["../app.component.css", "./sound-crossfader.component.css"]
+  styleUrls: ["./sound-crossfader.component.css"]
 })
 export class SoundCrossfaderComponent implements OnInit {
   scrollValue: number;

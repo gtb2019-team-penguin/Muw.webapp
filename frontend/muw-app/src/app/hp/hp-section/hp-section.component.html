@@ -1,0 +1,27 @@
+<section [style.background-image]="list.img" [class]="list.class">
+  <h2 *ngIf="list.title">
+    {{ list.title }}
+  </h2>
+  <p *ngIf="list.desc">
+    {{ list.desc }}
+  </p>
+  <div *ngIf="list.table">
+    <div *ngIf="list.table.type == 'table'">
+      <ul *ngFor="let row of list.table.content;">
+        <li><a [href]="row.col3">
+            {{ row.col1 }}
+          </a></li>
+        <li><a [href]="row.col3">
+            {{ row.col2 }}
+          </a></li>
+      </ul>
+    </div>
+    <div *ngIf="list.table.type == 'ul'">
+      <ul>
+        <li *ngFor="let row of list.table.content;"><a [href]="row.col3">
+            <img [src]="row.col1" />
+          </a></li>
+      </ul>
+    </div>
+  </div>
+</section>

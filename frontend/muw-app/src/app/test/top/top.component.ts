@@ -6,10 +6,10 @@ import { Component } from "@angular/core";
   styleUrls: ["./top.component.css"]
 })
 export class TopComponent {
-  title = "Top";
+  title = "Test Top";
   lists = [
-    { title: "howler", url: "./howler" },
-    { title: "fader", url: "./fader" },
-    { title: "crossfader", url: "./crossfade" }
+    { title: "howler", url: "/test/howler" },
+    { title: "fader", url: "/test/fader" },
+    { title: "crossfader", url: "/test/crossfade" }
   ];
 }
