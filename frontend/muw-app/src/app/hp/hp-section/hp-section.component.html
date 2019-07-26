@@ -1,8 +1,18 @@
 <section [style.background-image]="list.img" [class]="list.class">
-  <h2>
+  <h2 *ngIf="list.title">
     {{ list.title }}
   </h2>
-  <p>
+  <p *ngIf="list.desc">
     {{ list.desc }}
   </p>
+  <div *ngIf="list.table">
+    <ul *ngFor="let row of list.table;">
+      <li><a [href]="row.link">
+          {{ row.date }}
+        </a></li>
+      <li><a [href]="row.link">
+          {{ row.text }}
+        </a></li>
+    </ul>
+  </div>
 </section>

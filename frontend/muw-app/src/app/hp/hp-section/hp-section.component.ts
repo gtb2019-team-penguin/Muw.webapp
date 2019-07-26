@@ -15,7 +15,7 @@ import {
 })
 
 export class HpSectionComponent implements OnInit {
-  @Input() list: { title: string; desc: string; class: string; audio: string; img: string };
+  @Input() list: { title: string; desc?: string; table?: { date?: string, text?: string, link?: string }[]; class: string; audio: string; img: string };
   @Output() event = new EventEmitter<any>();
   @Input() thre: number;
   el: HTMLElement;
