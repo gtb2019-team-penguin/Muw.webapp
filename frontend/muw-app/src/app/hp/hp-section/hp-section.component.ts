@@ -15,7 +15,22 @@ import {
 })
 
 export class HpSectionComponent implements OnInit {
-  @Input() list: { title: string; desc?: string; table?: { date?: string, text?: string, link?: string }[]; class: string; audio: string; img: string };
+  @Input() list: {
+    title: string;
+    desc?: string;
+    table?: {
+      type?: string;
+      content?: {
+        date?: string;
+        text?: string;
+        link?: string;
+      }[]
+    };
+    class?: string;
+    audio?: string;
+    img?: string
+  };
+
   @Output() event = new EventEmitter<any>();
   @Input() thre: number;
   el: HTMLElement;
@@ -92,12 +107,15 @@ export class HpSectionComponent implements OnInit {
       if (this.isLoaded && this.isPlaying) {
         this.isPlaying = false;
         this.fadeOut();
-        this.context.suspend();
+        setTimeout(() => {
+          this.context.suspend();
+        }, 1000);
         console.log(this.list.title, "Pause!");
       }
     }
   }
   fadeOut() {
+    console.log("fadeout");
     this.gain = this.ctl.gainNode.gain.value;
     this.ctl.gainNode.gain.setTargetAtTime(0, this.context.currentTime, 1.0);
   }

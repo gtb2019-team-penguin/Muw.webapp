@@ -6,13 +6,22 @@
     {{ list.desc }}
   </p>
   <div *ngIf="list.table">
-    <ul *ngFor="let row of list.table;">
-      <li><a [href]="row.link">
-          {{ row.date }}
-        </a></li>
-      <li><a [href]="row.link">
-          {{ row.text }}
-        </a></li>
-    </ul>
+    <div *ngIf="list.table.type == 'table'">
+      <ul *ngFor="let row of list.table.content;">
+        <li><a [href]="row.col3">
+            {{ row.col1 }}
+          </a></li>
+        <li><a [href]="row.col3">
+            {{ row.col2 }}
+          </a></li>
+      </ul>
+    </div>
+    <div *ngIf="list.table.type == 'ul'">
+      <ul>
+        <li *ngFor="let row of list.table.content;"><a [href]="row.col3">
+            <img [src]="row.col1" />
+          </a></li>
+      </ul>
+    </div>
   </div>
 </section>
