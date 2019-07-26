@@ -109,7 +109,7 @@ export class HpSectionComponent implements OnInit {
         this.fadeOut();
         setTimeout(() => {
           this.context.suspend();
-        }, 1000);
+        }, 2000);
         console.log(this.list.title, "Pause!");
       }
     }
@@ -117,13 +117,13 @@ export class HpSectionComponent implements OnInit {
   fadeOut() {
     console.log("fadeout");
     this.gain = this.ctl.gainNode.gain.value;
-    this.ctl.gainNode.gain.setTargetAtTime(0, this.context.currentTime, 1.0);
+    this.ctl.gainNode.gain.setTargetAtTime(0, this.context.currentTime, 2.0);
   }
   fadeIn() {
     this.ctl.gainNode.gain.setTargetAtTime(
       this.gain,
       this.context.currentTime,
-      1.0
+      2.0
     );
     this.gain = this.ctl.gainNode.gain.value;
   }
